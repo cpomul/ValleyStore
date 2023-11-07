@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Stardew_Valley";
+
+  src: url("assets/Stardew_Valley.ttf") format("truetype"),
+    url("assets/Stardew_Valley.ttf") format("truetype");
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Stardew_Valley";
+}
+body {
+  background-image: url("assets/background.png"); /* Replace with your image URL */
+  background-repeat: no-repeat;
+  animation: moveRight 10s linear infinite;
+}
+
+.linkBar {
+  background-color: orange;
+  height: 50px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  gap: 50px;
+}
+
+.list > li {
+  font-size: 30px;
+  margin-top: 10px;
+  transition: background-color 0.5s;
+}
+
+.list > li:hover {
+  background-color: #ffd580;
+  color: #cc5500;
+  cursor: pointer;
+}
+
+.list-content {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 50px;
+  color: #cc5500;
+  background-color: #ffd580;
+}
+
+@keyframes moveRight {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
